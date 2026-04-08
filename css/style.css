@@ -36,12 +36,15 @@ header div a {
     font-weight: bold;
     color: var(--violet-doux);
 }
+
 ul li{list-style: none;
     margin-left: 25px;
 }
+
 ul{
     display: flex;
 }
+
 ul li a{
     text-decoration: none;
     color: var(--grid-tres-fonce);
@@ -50,9 +53,12 @@ ul li a{
     position: relative;
     padding: 10px 0;
 }
+
+
 ul li a:hover{
     color: var(--violet-doux);
 }
+
 ul li a::after{
     content: '';
     position: absolute;
@@ -63,15 +69,19 @@ ul li a::after{
     background-color: var(--violet-doux);
     transition: width 0.3s ease;
 }
+
 ul li a:hover::after{
     width: 100%;
 }
+
 a.active {
     color: var(--violet-doux);
 }
+
 a.active::after{
     width: 100%;
 }
+
 .hero{
     display: flex;
     justify-content: center;
@@ -94,11 +104,13 @@ a.active::after{
     margin-bottom: 1.2rem;
 
 }
+
 .hero p{
     color: var(--gris-fonce);
     font-size: 1.3rem;
     margin-bottom: 1.1rem;
 }
+
 .hero a {
     text-decoration: none;
     display: inline-block;
@@ -112,6 +124,7 @@ a.active::after{
     margin: 1.1rem;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 .hero a:hover{
     background-color: var(--violet-fonce);
     transform: translateY(-3px);
