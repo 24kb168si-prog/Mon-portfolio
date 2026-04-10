@@ -1,43 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MON Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Mes Passions | NOREDIE</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <header>
-    <div>
-        <a href="">Mon portfolio</a>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="Index.html">Accueil</a></li>
-            <li><a href="Projects.html " class="active">Projets</a></li>
-            <li><a href="Passions.html" class="active">Passions</a></li>
-            <li><a href="Divertissement.html">Divertissement</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-        </ul>
-    </nav>
-   </header> 
-   <main>
-    <h1>Voici Mes Passions</h1>
-   </main>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">Mon portfolio</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="passions.html" class="active">Passions</a></li>
+                <li><a href="divertissement.html">Divertissement</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="header-section">
+            <h1>Ce qui m'anime</h1>
+            <div class="underline"></div>
+            <p>Au-delà du code, voici les univers qui nourrissent ma créativité et ma curiosité au quotidien.</p>
+        </section>
+
+        <section class="passions-grid">
+            
+            <article class="passion-card">
+                <div class="passion-image">
+                    <img src="Images/Dévellopement web.jpg" alt="Développement Web">
+                </div>
+                <div class="passion-content">
+                    <h3>Développement Web</h3>
+                    <p>L'art de transformer des idées en solutions interactives. J'aime construire des interfaces fluides et logiques.</p>
+                </div>
+            </article>
+
+            <article class="passion-card">
+                <div class="passion-image">
+                    <img src="Images/Design graphique.jpg" alt="Design Graphique">
+                </div>
+                <div class="passion-content">
+                    <h3>Design & UI</h3>
+                    <p>Concevoir des maquettes esthétiques sur Figma qui allient beauté et simplicité pour l'utilisateur.</p>
+                </div>
+            </article>
+
+            <article class="passion-card">
+                <div class="passion-image">
+                    <img src="Images/IA & Futur.jpg" alt="Intelligence Artificielle">
+                </div>
+                <div class="passion-content">
+                    <h3>IA & Futur</h3>
+                    <p>Passionnée par les nouvelles technologies qui repoussent les limites de ce que nous pouvons créer aujourd'hui.</p>
+                </div>
+            </article>
+
+            <article class="passion-card">
+                <div class="passion-image">
+                    <img src="Images/musique.jpg" alt="web">
+                </div>
+                <div class="passion-content">
+                    <h3>Musique</h3>
+                    <p>Ma source d'énergie. Elle m'aide à rester concentrée et inspirée pendant mes sessions de travail les plus intenses.</p>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
     <footer>
         <p>&copy; 2026 NOREDIE. Tous droits réservés.</p>
-        <div>
-            <a href=""><i class="fa-brands fa-github"></i></a>
-           <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-x-twitter"></i></a> 
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
     </footer>
-    
+
 </body>
 </html>
-
-

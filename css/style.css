@@ -1,5 +1,5 @@
-:root{
-    --violet-doux: #6c63ff;
+root{
+    :--violet-doux: #6c63ff;
     --violet-fonce: #534edd;
     --orange-vif: #ffa726;
     --grid-tres-fonce: #333;
@@ -218,3 +218,1740 @@ section h2::after {
     color: var(--orange-vif);
     transform: translateY(-3px);
  }
+
+.rang1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projets h2{
+    margin-top: 60px;
+}
+.projets h2::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 1.2rem auto;
+    border-radius: 2px;
+}
+.pro1{
+    padding: 0;
+    height: 480px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(128, gre128en, blu128e, 0.342);
+    margin: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+:root {
+    --violet-doux: #6c63ff;
+    --violet-fonce: #534edd;
+    --orange-vif: #ffa726;
+    --grid-tres-fonce: #333;
+    --gris-fonce: #666;
+    --gris-tres-clair: #f8f8f8;
+    --gris-clair: #eee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gris-tres-clair);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+header div a {
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--violet-doux);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    margin-left: 25px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--grid-tres-fonce);
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: relative;
+    padding: 10px 0;
+}
+
+ul li a:hover, a.active {
+    color: var(--violet-doux);
+}
+
+ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: var(--violet-doux);
+    transition: width 0.3s ease;
+}
+
+ul li a:hover::after, a.active::after {
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    text-align: center;
+    margin: 10rem 2rem;
+}
+
+.hero img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid var(--violet-doux);
+}
+
+.hero h1 {
+    color: var(--violet-doux);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.hero p {
+    color: var(--gris-fonce);
+    font-size: 1.3rem;
+    margin-bottom: 1.1rem;
+}
+
+.hero a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--violet-doux);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 75px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-weight: 600;
+    margin: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero a:hover {
+    background-color: var(--violet-fonce);
+    transform: translateY(-3px);
+}
+
+.apropos {
+    max-width: 800px;
+    margin: 6rem auto;
+    text-align: center;
+}
+
+section h2 { 
+    color: var(--violet-doux);
+    font-size: 2.6rem;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 1.2rem auto;
+    border-radius: 2px;
+}
+
+.apropos p {
+    margin-bottom: 2rem;
+    color: var(--gris-fonce);
+    font-size: 1.2rem;
+}
+
+table {
+    width: 80%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+thead {
+    background-color: var(--violet-doux);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+tbody td {
+    border-bottom: 1px solid var(--gris-clair);
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fdfdfd;
+}
+
+tbody tr:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    margin-top: 3rem;
+    background-color: var(--violet-doux);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    margin-bottom: 1.2rem;
+}
+
+footer a {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+footer a:hover {
+    color: var(--orange-vif);
+    transform: translateY(-3px);
+}
+
+
+:root {
+    --violet-doux: #6c63ff;
+    --violet-fonce: #534edd;
+    --orange-vif: #ffa726;
+    --grid-tres-fonce: #333;
+    --gris-fonce: #666;
+    --gris-tres-clair: #f8f8f8;
+    --gris-clair: #eee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gris-tres-clair);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* --- HEADER --- */
+header {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+}
+
+header div a {
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--violet-doux);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li { margin-left: 25px; }
+
+ul li a {
+    text-decoration: none;
+    color: var(--grid-tres-fonce);
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: relative;
+    padding: 10px 0;
+}
+
+ul li a:hover, a.active { color: var(--violet-doux); }
+
+ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: 0;
+    height: 3px; width: 0;
+    background-color: var(--violet-doux);
+    transition: width 0.3s ease;
+}
+
+ul li a:hover::after, a.active::after { width: 100%; }
+
+/* --- CONTENEUR DES PROJETS --- */
+.container {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.header-section {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.header-section h1 {
+    color: var(--violet-doux);
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 80px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* GRILLE : 3 colonnes (Haut/Bas) */
+.projets-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* --- STYLE DES CARTES --- */
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-body {
+    padding: 1.5rem;
+    flex-grow: 1;
+}
+
+.card-body img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.card-body h1, .card-body h2, .card-body h3 {
+    color: var(--grid-tres-fonce);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    color: var(--gris-fonce);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+/* TAGS */
+.tags, .tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: var(--gris-tres-clair);
+    color: var(--violet-doux);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* FOOTER DE LA CARTE */
+.card-footer {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid var(--gris-clair);
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-footer a {
+    text-decoration: none;
+    color: var(--violet-doux);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.status {
+    color: var(--orange-vif);
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+/* FOOTER GENERAL */
+footer {
+    background-color: var(--violet-doux);
+    padding: 3rem 0;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+footer p { color: white; margin-bottom: 1rem; }
+
+footer a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+footer a:hover { color: var(--orange-vif); }
+
+
+
+:root {
+    --violet-doux: #6c63ff;
+    --violet-fonce: #534edd;
+    --orange-vif: #ffa726;
+    --grid-tres-fonce: #333;
+    --gris-fonce: #666;
+    --gris-tres-clair: #f8f8f8;
+    --gris-clair: #eee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gris-tres-clair);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--grid-tres-fonce);
+}
+
+/* --- HEADER --- */
+header {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+}
+
+header div a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--violet-doux);
+}
+
+ul { display: flex; list-style: none; }
+ul li { margin-left: 25px; }
+ul li a {
+    text-decoration: none;
+    color: var(--grid-tres-fonce);
+    font-weight: 600;
+    position: relative;
+    padding: 5px 0;
+}
+
+ul li a:hover, a.active { color: var(--violet-doux); }
+ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: 0;
+    height: 3px; width: 0;
+    background-color: var(--violet-doux);
+    transition: 0.3s;
+}
+ul li a:hover::after, a.active::after { width: 100%; }
+
+/* --- GRILLE DE PROJETS --- */
+.container {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 20px;
+}
+
+.header-section {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.header-section h1 {
+    font-size: 2.5rem;
+    color: var(--violet-doux);
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background: var(--violet-doux);
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/* L'ordre 3x3 est géré ici */
+.projets-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* --- CARTES --- */
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+
+/* --- CONFIGURATION GÉNÉRALE --- */
+:root {
+    --violet-principal: #6c63ff;
+    --violet-fonce: #534edd;
+    --gris-fond: #f8f9fa;
+    --gris-texte: #555;
+    --noir-titre: #2d2e32;
+    --blanc: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gris-fond);
+    font-family: 'Roboto', sans-serif;
+    color: var(--noir-titre);
+    line-height: 1.6;
+}
+
+/* --- HEADER / NAVIGATION --- */
+header {
+    background: var(--blanc);
+    padding: 1.2rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--violet-principal);
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--noir-titre);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover, 
+header nav ul li a.active {
+    color: var(--violet-principal);
+}
+
+/* --- STRUCTURE --- */
+.container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.header-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.header-section h1 {
+    font-size: 2.5rem;
+    color: var(--violet-principal);
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background: var(--violet-principal);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-section p {
+    color: var(--gris-texte);
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+/* --- GRILLE DES PASSIONS --- */
+.passions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+/* --- CARTE PASSION --- */
+.passion-card {
+    background: var(--blanc);
+    border-radius: 20px;
+    overflow: hidden; /* Empêche l'image de déborder des bords arrondis */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.passion-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(108, 99, 255, 0.2);
+}
+
+/* --- IMAGE DANS LE CADRE --- */
+.passion-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.passion-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recadre l'image proprement sans déformation */
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.passion-card:hover img {
+    transform: scale(1.1); /* Petit effet de zoom au survol */
+}
+
+/* --- CONTENU TEXTE --- */
+.passion-content {
+    padding: 25px;
+    text-align: center;
+}
+
+.passion-content h3 {
+    font-size: 1.4rem;
+    color: var(--violet-principal);
+    margin-bottom: 15px;
+}
+
+.passion-content p {
+    font-size: 0.95rem;
+    color: var(--gris-texte);
+}
+
+/* --- FOOTER --- */
+footer {
+    background: var(--violet-principal);
+    color: var(--blanc);
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 80px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: var(--blanc);
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffd700; /* Jaune or au survol pour le contraste */
+    transform: translateY(-5px);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    header nav ul {
+        margin-top: 20px;
+        gap: 15px;
+    }
+    .header-section h1 {
+        font-size: 2rem;
+    }
+}
+
+
+/* --- CONFIGURATION GÉNÉRALE --- */
+:root {
+    --violet-principal: #6c63ff;
+    --violet-fonce: #534edd;
+    --gris-fond: #f8f9fa;
+    --gris-texte: #555;
+    --noir-titre: #2d2e32;
+    --blanc: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gris-fond);
+    font-family: 'Roboto', sans-serif;
+    color: var(--noir-titre);
+    line-height: 1.6;
+}
+
+/* --- HEADER / NAVIGATION --- */
+header {
+    background: var(--blanc);
+    padding: 1.2rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--violet-principal);
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--noir-titre);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover, 
+header nav ul li a.active {
+    color: var(--violet-principal);
+}
+
+/* --- STRUCTURE --- */
+.container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.header-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.header-section h1 {
+    font-size: 2.5rem;
+    color: var(--violet-principal);
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background: var(--violet-principal);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-section p {
+    color: var(--gris-texte);
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+/* --- GRILLE DES PASSIONS --- */
+.passions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+/* --- CARTE PASSION --- */
+.passion-card {
+    background: var(--blanc);
+    border-radius: 20px;
+    overflow: hidden; /* Empêche l'image de déborder des bords arrondis */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.passion-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(108, 99, 255, 0.2);
+}
+
+/* --- IMAGE DANS LE CADRE --- */
+.passion-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.passion-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recadre l'image proprement sans déformation */
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.passion-card:hover img {
+    transform: scale(1.1); /* Petit effet de zoom au survol */
+}
+
+/* --- CONTENU TEXTE --- */
+.passion-content {
+    padding: 25px;
+    text-align: center;
+}
+
+.passion-content h3 {
+    font-size: 1.4rem;
+    color: var(--violet-principal);
+    margin-bottom: 15px;
+}
+
+.passion-content p {
+    font-size: 0.95rem;
+    color: var(--gris-texte);
+}
+
+/* --- FOOTER --- */
+footer {
+    background: var(--violet-principal);
+    color: var(--blanc);
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 80px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: var(--blanc);
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffd700; /* Jaune or au survol pour le contraste */
+    transform: translateY(-5px);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    header nav ul {
+        margin-top: 20px;
+        gap: 15px;
+    }
+    .header-section h1 {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+/* =========================================
+   1. VARIABLES ET CONFIGURATION
+   ========================================= */
+:root {
+    --violet-principal: #6c63ff;
+    --violet-fonce: #534edd;
+    --violet-clair: #f0efff;
+    --blanc: #ffffff;
+    --gris-fond: #f8f9fa;
+    --noir-titre: #2d2e32;
+    --gris-texte: #666;
+    --orange-accent: #ffa726;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gris-fond);
+    font-family: 'Roboto', sans-serif;
+    color: var(--noir-titre);
+    line-height: 1.6;
+}
+
+/* =========================================
+   2. NAVIGATION (HEADER)
+   ========================================= */
+header {
+    background: var(--blanc);
+    padding: 1rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--violet-principal);
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--noir-titre);
+    font-weight: 500;
+    transition: 0.3s;
+    padding: 5px 0;
+}
+
+header nav ul li a:hover, 
+header nav ul li a.active {
+    color: var(--violet-principal);
+}
+
+/* =========================================
+   3. STRUCTURE ET TITRES
+   ========================================= */
+.container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.header-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.header-section h1 {
+    font-size: 2.5rem;
+    color: var(--violet-principal);
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background: var(--violet-principal);
+    margin: 0 auto 15px;
+    border-radius: 5px;
+}
+
+/* =========================================
+   4. STYLE PASSIONS (CARTES AVEC IMAGES)
+   ========================================= */
+.passions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.passion-card {
+    background: var(--blanc);
+    border-radius: 20px;
+    overflow: hidden; /* Important pour les coins arrondis de l'image */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.passion-card:hover {
+    transform: translateY(-10px);
+}
+
+.passion-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* L'image remplit le cadre sans se déformer */
+    display: block;
+}
+
+.passion-content {
+    padding: 25px;
+    text-align: center;
+}
+
+/* =========================================
+   5. STYLE DIVERTISSEMENT (CARTES AVEC ICÔNES)
+   ========================================= */
+.divertissement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.fun-card {
+    background: var(--blanc);
+    padding: 40px 30px;
+    border-radius: 25px;
+    text-align: center;
+    border: 1px solid #eee;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fun-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--violet-clair);
+    color: var(--violet-principal);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    transition: 0.4s;
+}
+
+/* Effet spécial Divertissement au survol */
+.fun-card:hover {
+    background: var(--violet-principal);
+    transform: translateY(-12px);
+    box-shadow: 0 15px 30px rgba(108, 99, 255, 0.3);
+}
+
+.fun-card:hover .fun-icon {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--blanc);
+    transform: rotateY(360deg);
+}
+
+.fun-card:hover h3, 
+.fun-card:hover p {
+    color: var(--blanc);
+}
+
+/* =========================================
+   6. FOOTER
+   ========================================= */
+footer {
+    background: var(--violet-principal);
+    color: var(--blanc);
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 80px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: var(--blanc);
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--orange-accent);
+}
+
+/* =========================================
+   7. RESPONSIVE
+   ========================================= */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    header nav ul {
+        margin-top: 20px;
+        gap: 15px;
+    }
+    .header-section h1 {
+        font-size: 2rem;
+    }
+}
+
+
+:root {
+    --primary: #6c63ff;
+    --primary-dark: #4b45b2;
+    --accent: #00d2ff;
+    --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --text-main: #2d3436;
+    --text-soft: #636e72;
+    --white: #ffffff;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-gradient);
+    background-attachment: fixed;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 1.2rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+header .logo a {
+    font-size: 1.8rem;
+    font-weight: 800;
+    background: linear-gradient(to right, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 600;
+    transition: 0.3s;
+    position: relative;
+}
+
+header nav ul li a:hover, header nav ul li a.active {
+    color: var(--primary);
+}
+
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0; height: 3px;
+    bottom: -5px; left: 0;
+    background: var(--primary);
+    transition: 0.3s;
+}
+
+header nav ul li a:hover::after, 
+header nav ul li a.active::after {
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.header-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.header-section h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text-main);
+}
+
+.underline {
+    width: 80px;
+    height: 6px;
+    background: linear-gradient(to right, var(--primary), var(--accent));
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+.passions-grid, .projets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.card, .passion-card {
+    background: var(--card-bg);
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: var(--shadow);
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover, .passion-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(108, 99, 255, 0.2);
+}
+
+.card img, .passion-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.6s;
+}
+
+.card:hover img, .passion-card:hover img {
+    transform: scale(1.1);
+}
+
+.divertissement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.fun-card {
+    background: var(--card-bg);
+    padding: 50px 30px;
+    border-radius: 30px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: 0.4s;
+}
+
+.fun-icon {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(45deg, var(--primary), var(--accent));
+    color: white;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin: 0 auto 25px;
+    box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
+    transition: 0.4s;
+}
+
+.fun-card:hover {
+    background: var(--primary);
+    transform: translateY(-10px);
+}
+
+.fun-card:hover .fun-icon {
+    background: white;
+    color: var(--primary);
+    transform: rotate(10deg);
+}
+
+.fun-card:hover h3, .fun-card:hover p {
+    color: white;
+}
+
+:root {
+    --violet-principal: #6c63ff;
+    --violet-fonce: #534edd;
+    --violet-clair: #f0efff;
+    --blanc: #ffffff;
+    --gris-fond: #f8f9fa;
+    --noir-titre: #2d2e32;
+    --gris-texte: #666;
+    --vert-whatsapp: #25D366;
+    --bleu-telegram: #0088cc;
+    --shadow-soft: 0 10px 30px rgba(108, 99, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gris-fond);
+    font-family: 'Roboto', sans-serif;
+    color: var(--noir-titre);
+    line-height: 1.6;
+}
+
+header {
+    background: var(--blanc);
+    padding: 1.2rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--violet-principal);
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--noir-titre);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover, 
+header nav ul li a.active {
+    color: var(--violet-principal);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.header-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.header-section h1 {
+    font-size: 2.8rem;
+    color: var(--violet-principal);
+}
+
+.underline {
+    width: 70px;
+    height: 5px;
+    background: var(--violet-principal);
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.projets-grid, .passions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card, .passion-card {
+    background: var(--blanc);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(108, 99, 255, 0.05);
+}
+
+.card:hover, .passion-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(108, 99, 255, 0.2);
+}
+
+.card img, .passion-image img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.card:hover img, .passion-card:hover img {
+    transform: scale(1.05);
+}
+
+.card-body, .passion-content {
+    padding: 25px;
+    text-align: center;
+}
+
+.divertissement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.fun-card {
+    background: var(--blanc);
+    padding: 45px 30px;
+    border-radius: 25px;
+    text-align: center;
+    border: 1px solid #eee;
+    transition: all 0.4s ease;
+}
+
+.fun-icon {
+    width: 85px;
+    height: 85px;
+    background: var(--violet-clair);
+    color: var(--violet-principal);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    margin: 0 auto 20px;
+    transition: 0.4s;
+}
+
+.fun-card:hover {
+    background: var(--violet-principal);
+    transform: translateY(-12px);
+    box-shadow: 0 15px 30px rgba(108, 99, 255, 0.3);
+}
+
+.fun-card:hover .fun-icon {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--blanc);
+    transform: rotateY(360deg);
+}
+
+.fun-card:hover h3, 
+.fun-card:hover p {
+    color: var(--blanc);
+}
+
+:root {
+    --violet-principal: #6c63ff;
+    --violet-fonce: #534edd;
+    --violet-clair: #f0efff;
+    --blanc: #ffffff;
+    --gris-fond: #f8f9fa;
+    --noir-titre: #2d2e32;
+    --gris-texte: #666;
+    --vert-whatsapp: #25D366;
+    --bleu-telegram: #0088cc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gris-fond);
+    font-family: 'Roboto', sans-serif;
+    color: var(--noir-titre);
+    line-height: 1.6;
+}
+
+header {
+    background: var(--blanc);
+    padding: 1.2rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--violet-principal);
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--noir-titre);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover, 
+header nav ul li a.active {
+    color: var(--violet-principal);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.header-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.header-section h1 {
+    font-size: 2.8rem;
+    color: var(--violet-principal);
+}
+
+.underline {
+    width: 70px;
+    height: 5px;
+    background: var(--violet-principal);
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+/* Grilles communes */
+.projets-grid, .passions-grid, .divertissement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card, .passion-card, .fun-card {
+    background: var(--blanc);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+/* Page Contact */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background: var(--blanc);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+}
+
+.contact-info h3 {
+    color: var(--violet-principal);
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-info i {
+    color: var(--violet-principal);
+}
+
+.social-contact {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn-contact {
+    padding: 12px 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.whatsapp { background: var(--vert-whatsapp); }
+.telegram { background: var(--bleu-telegram); }
+
+.btn-contact:hover {
+    transform: translateY(-5px);
+    filter: brightness(1.1);
+}
+
+/* Formulaire épuré */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 18px;
+    border: 1px solid #eee;
+    background: #fdfdfd;
+    border-radius: 15px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+    font-family: inherit;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: var(--violet-principal);
+    background: var(--blanc);
+    box-shadow: 0 0 0 4px rgba(108, 99, 255, 0.1);
+}
+
+.btn-submit {
+    background: var(--violet-principal);
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background: var(--violet-fonce);
+}
+
+footer {
+    background: var(--violet-principal);
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+    margin-top: 80px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.6rem;
+    margin: 0 15px;
+}
+
+@media (max-width: 850px) {
+    .contact-wrapper { grid-template-columns: 1fr; }
+    header { flex-direction: column; padding: 20px; }
+}

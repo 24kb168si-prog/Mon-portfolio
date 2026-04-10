@@ -1,44 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MON Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Divertissement | NOREDIE</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <header>
-    <div>
-        <a href="">Mon portfolio</a>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="Index.html">Accueil</a></li>
-            <li><a href="Projects.html">Projets</a></li>
-            <li><a href="Passions.html">Passions</a></li>
-            <li><a href="Divertissement.html" class="active">Divertissement</a></li>
-            <li><a href="Contacts.html">Contact</a></li>
-        </ul>
-    </nav>
-   </header> 
-   <main>
-    <h1>Voici Mes Divertissements</h1>
-   </main>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">Mon portfolio</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="divertissement.html" class="active">Divertissement</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="header-section">
+            <h1>Divertissement</h1>
+            <div class="underline"></div>
+            <p>Voici comment je déconnecte et recharge mes batteries après une longue session de code.</p>
+        </section>
+
+        <section class="divertissement-grid">
+            
+            <div class="fun-card">
+                <div class="fun-icon">
+                    <i class="fa-solid fa-gamepad"></i>
+                </div>
+                <h3>Gaming</h3>
+                <p>Passionnée par les jeux de stratégie et les univers immersifs qui stimulent la réflexion.</p>
+            </div>
+
+            <div class="fun-card">
+                <div class="fun-icon">
+                    <i class="fa-solid fa-film"></i>
+                </div>
+                <h3>Cinéma</h3>
+                <p>Amatrice de science-fiction et de récits captivants. Le storytelling m'inspire énormément.</p>
+            </div>
+
+            <div class="fun-card">
+                <div class="fun-icon">
+                    <i class="fa-solid fa-headphones"></i>
+                </div>
+                <h3>Musique</h3>
+                <p>Mon carburant quotidien. Indispensable pour la concentration ou simplement s'évader.</p>
+            </div>
+
+            <div class="fun-card">
+                <div class="fun-icon">
+                    <i class="fa-solid fa-book"></i>
+                </div>
+                <h3>Lecture</h3>
+                <p>Développement personnel et nouvelles technologies pour rester à la page.</p>
+            </div>
+
+            <div class="fun-card">
+                <div class="fun-icon">
+                    <i class="fa-solid fa-plane"></i>
+                </div>
+                <h3>Voyages</h3>
+                <p>Découvrir de nouvelles cultures et horizons pour enrichir ma vision du monde.</p>
+            </div>
+
+            <div class="fun-card">
+                <div class="fun-icon">
+                    <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <h3>Sport</h3>
+                <p>Essentiel pour maintenir l'équilibre entre le corps et l'esprit.</p>
+            </div>
+
+        </section>
+    </main>
+
     <footer>
         <p>&copy; 2026 NOREDIE. Tous droits réservés.</p>
-        <div>
-           <a href=""><i class="fa-brands fa-github"></i></a>
-           <a href=""><i class="fa-brands fa-linkedin"></i></a>
-           <a href=""><i class="fa-brands fa-x-twitter"></i></a>  
-            
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
     </footer>
-    
+
 </body>
 </html>
-
-
